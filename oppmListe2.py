@@ -66,10 +66,7 @@ def show_info():
     Display the info dialog for exporting Blackboard group lists.
     """
     return easygui.buttonbox(
-        'Hente ned gruppeliste fra Blackboard (kun første gang eller hvis gruppelista er endret):\n\n'
-        '1. Inne på emnet ditt på Blackboard, gå til Grupper. \n   Trykk Eksporter til Excel. \n'
-        '2. Lagre fila som .csv\n'
-        '3. Bruk denne fila i programmet.',
+        'Hente ned gruppeliste fra Blackboard (kun første gang eller hvis gruppelista er endret):\n\n1. Inne på emnet ditt på Blackboard, gå til Grupper. \n   Trykk Eksporter --> Kun gruppemedlemmer.\n2. Du får en epost "Masseeksport fullført". Lagre fila.\n\nOpprette avstemning i Mentimeter (kun første gang):\n\n1. Gå til Mentimeter www.mentimeter.com/auth/saml/ntnu\n2. Trykk New Menti --> Start from scratch --> Open Ended\n3. Øverst skriver du navn på presentasjonen,\n   f.eks. "Oppmøte Teksam 1FA 2024/25".\n3. Bytt ut «Ask your question here…» med "Oppmøte: Skriv ditt NTNU‐brukernavn".\n\nAvstemning:\n\n1. I timen viser du Menti‐presentasjonen. Skru på QR‐kode.\n   Bruk samme presentasjon hver gang.\n2. Etter at alle har skrevet seg inn, trykk Manage Results --> Reset results.\n   Mentimeter har lagret resultatene, selv om du ikke ser dem.\n3. Finn presentasjonen i Mentimeter og trykk\n   View Results --> Download --> Spreadsheet (XLSX).\n\nDet kan hende studenter skriver brukernavnet feil. I så fall kan du trykke "Tilpass brukernavn".',
         'Mer info',
         ('OK', 'Avbryt')
     )
@@ -225,3 +222,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
